@@ -33,5 +33,9 @@ body{
 }
 .container{
     background-color: rgb(204, 238, 247);
+    
 }
-
+.carousel-inner img {
+    max-height: 600px; 
+    width: auto; 
+  }
