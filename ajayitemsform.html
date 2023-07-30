@@ -12,7 +12,7 @@
 
     <title>Hello, world!</title>
 
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="./ajatcss.css" type="text/css">
 
 </head>
 
@@ -35,11 +35,11 @@
                     <a class="nav-link" href="aboutus.html"><strong>About Us</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="products.html"><strong>Products</strong></a>
+                    <a class="nav-link" href="ajayitems.html"><strong>Products</strong></a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="items_form.html"><strong>Form</strong></a>
+                    <a class="nav-link" href="ajayitemsform.html"><strong>Form</strong></a>
                 </li>
 
             </ul>
@@ -52,22 +52,22 @@
         
         <h2 class="text-center"> ADD PRODUCT </h2>
 
-        <form class="item-form">
+        <form class="item-form" method="get" id="newItemForm">
 
             <div class="form-group">
-                <label for="name">Name of the item</label>
-                <input type="text" class="form-control" id="name">
+                <label for="newItemName">Name of the item</label>
+                <input type="text" class="form-control" id="newItemName">
             </div>
 
             <div class="form-group">
-                <label for="email">Item Description</label>
-                <input type="text" class="form-control" id="email">
+                <label for="newItemDescription">Item Description</label>
+                <input type="text" class="form-control" id="newItemDescription">
 
             </div>
 
             <div class="form-group">
-                <label for="imgurl">Img URL</label>
-                <input type="text" class="form-control" id="imgurl">
+                <label for="newItemImageUrl">Img URL</label>
+                <input type="text" class="form-control" id="newItemImageUrl">
             </div>
 
             <button type="submit" class="btn btn-primary">Save item</button>
@@ -76,6 +76,21 @@
 
 
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="./formitemscontroller.js"></script>
+    <script src="./ajayitemsform.js"></script>
+    
 </body>
 
 </html>
